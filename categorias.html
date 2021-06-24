@@ -1,0 +1,278 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="css/bootstrap.css">
+
+  <!-- Iconic CSS -->
+  <link href="iconic/font/css/open-iconic-bootstrap.css" rel="stylesheet">
+
+  <!-- Fontawesome CSS -->
+  <link rel="stylesheet" href="fontawesome/css/all.css">
+
+  <link rel="stylesheet" href="css/style-home.css">
+
+  <title>Task - Categorias</title>
+  <link rel="icon" href="img/logo-top.png">
+  
+  <script type="text/javascript" src="js/index.js"></script>
+</head>
+
+<body>
+  <header class="">  
+    <nav class="navbar-topo navbar navbar-expand-lg">
+      <a class="navbar-brand" href="index.html"><img src="img/logo-top.png" alt="" width="85px"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarPrincipal" aria-controls="navbarPrincipal" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="fa fa-bars text-light pt-1"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse" id="navbarPrincipal">
+        <ul class="navbar-nav">
+
+          <li class="nav-item nav-item-login d-lg-none">
+            <div class="row d-lg-none">
+              <div class="col-12 row">
+                <div class="col-4">
+                  <span><img class="w-100" style="border-radius: 50px;" src="img/icone-perfil.jpg"></span>
+                </div>
+                <div class="col-8">
+                  <h5 class="text-dark">Bem-vindo</h5>
+                  <p class="text-secondary">Entre na sua conta para contratar ou receber serviços.</p>
+                </div>
+              </div>
+              <div class="col-12 d-flex justify-content-end">
+                <a class="btn btn-entrar ml-2 entrar-btn" href="login.html">Entrar</a>
+                <a class="btn btn-cadastrar cadastrar-btn" href="cadastro.html">Cadastrar</a>
+              </div>
+            </div>
+          </li>
+        
+          <li class="nav-item ml-lg-4 active">
+            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Sobre</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Categorias
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item text-dark" href="categorias.html">Todas as categorias</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item text-dark" href="#">Costureira</a>
+              <a class="dropdown-item text-dark" href="#">Diarista</a>
+              <a class="dropdown-item text-dark" href="#">Cozinheiro</a>
+              <a class="dropdown-item text-dark" href="#">Eletricista</a>
+              <a class="dropdown-item text-dark" href="#">Pedreiro</a>
+              <a class="dropdown-item text-dark" href="#">Pintor</a>
+              <a class="dropdown-item text-dark" href="#">Piscineiro</a>
+              <a class="dropdown-item text-dark" href="#">Personal</a>
+              <a class="dropdown-item text-dark" href="#">Manicure</a>
+              <a class="dropdown-item text-dark" href="#">Encanador</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contato.html">Contato</a>
+          </li>
+          <li class="nav-item w-75 ml-lg-5">
+            <form class="mt-1 form-inline my-2 my-lg-0">
+              <input class="form-control col-10 mr-1" type="search" placeholder="O que você está procurando ?" aria-label="O que você está procurando ?">
+              <button class="btn btn-outline-light fa fa-search p-2 col-auto" type="submit"></button>
+            </form>
+          </li>
+          <li class="nav-item ml-auto">
+            <a class="nav-link d-none d-lg-block" href="login.html">Entrar <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link d-none d-lg-block" href="cadastro.html">Cadastrar <span class="sr-only">(current)</span></a>
+          </li>
+        </ul>
+        
+      </div>
+    </nav>
+  </header>
+
+  <main class="mb-5 mt-5">
+    <section class="cartegorias-pagina bg-transparent">
+        <nav class="navbar navbar-expand-lg">
+          <div class="row">
+            <div class="rounded col-9 row ml-auto mr-auto bg-light p-3">
+              <div class="col-12 col-lg-2 col-xl-2">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCategorias" aria-controls="navbarCategorias" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="span-color fa fa-bars pt-1">
+                    <span class="h4-color ml-2">Categorias</span>
+                  </span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCategorias">
+                  <ul class="navbar-nav pl-5 pl-lg-0 row">
+                    <h4 class="h4-color d-none d-lg-block pl-2">Categorias</h4>
+                    <li class="nav-item"><a class="categorias-opcao filter-btn active nav-link" id="all-btn" href="#">Todas</a></li>
+                    <li class="nav-item"><a class="categorias-opcao filter-btn nav-link" id="costureira-btn" href="#">Costureira(o)</a></li>
+                    <li class="nav-item"><a class="categorias-opcao filter-btn nav-link" id="cozinha-btn" href="#">Cozinheiro(a)</a></li>
+                    <li class="nav-item"><a class="categorias-opcao filter-btn nav-link" id="pedreiro-btn" href="#">Pedreiro(a)</a></li>
+                    <li class="nav-item"><a class="categorias-opcao filter-btn nav-link" id="diarista-btn" href="#">Diarista</a></li>
+                    <li class="nav-item"><a class="categorias-opcao filter-btn nav-link" id="eletricista-btn" href="#">Eletricista</a></li>
+                    <li class="nav-item"><a class="categorias-opcao filter-btn nav-link" id="encanador-btn" href="#">Encanador(a)</a></li>
+                    <li class="nav-item"><a class="categorias-opcao filter-btn nav-link" id="manicure-btn" href="#">Manicure</a></li>
+                    <li class="nav-item"><a class="categorias-opcao filter-btn nav-link" id="personal-btn" href="#">Personal</a></li>
+                    <li class="nav-item"><a class="categorias-opcao filter-btn nav-link" id="pintor-btn" href="#">Pintor(a)</a></li>
+                    <li class="nav-item"><a class="categorias-opcao filter-btn nav-link" id="piscineiro-btn" href="#">Piscineiro(a)</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="row col-12 col-lg-10 col-xl-10 d-inline-flex justify-content-center">
+                <div class="col-lg-3 text-center opcoes-box pedreiro">
+                  <img src="img/perfil1.png" class="img-fluid" alt="Perfil1">
+                  <h6 class="text-center pt-1">José Pereira</h6>
+                  <span>Pedreiro</span><br><br>
+                  <button class="btn">Orçamento</button>
+                </div>
+                <div class="col-lg-3 text-center opcoes-box encanador">
+                  <img src="img/perfil2.png" class="img-fluid" alt="Perfil1">
+                  <h6 class="text-center pt-1">Pedro Dias</h6>
+                  <span>Encanador</span><br><br>
+                  <button class="btn">Orçamento</button>
+                </div>
+                <div class="col-lg-3 text-center opcoes-box manicure">
+                  <img src="img/perfil3.png" class="img-fluid" alt="Perfil1">
+                  <h6 class="text-center pt-1">Maria Antonia</h6>
+                  <span>Manicure</span><br><br>
+                  <button class="btn">Orçamento</button>
+                </div>
+                <div class="col-lg-3 text-center opcoes-box personal">
+                  <img src="img/perfil4.png" class="img-fluid" alt="Perfil1">
+                  <h6 class="text-center pt-1">Augusto Santos</h6>
+                  <span>Personal</span><br><br>
+                  <button class="btn">Orçamento</button>
+                </div>
+                <div class="col-lg-3 text-center opcoes-box diarista">
+                  <img src="img/perfil5.png" class="img-fluid" alt="Perfil1">
+                  <h6 class="text-center pt-1">Lucia Nabeiro</h6>
+                  <span>Diarista</span><br><br>
+                  <button class="btn">Orçamento</button>
+                </div>
+                <div class="col-lg-3 text-center opcoes-box cozinha">
+                  <img src="img/perfil1.png" class="img-fluid" alt="Perfil1">
+                  <h6 class="text-center pt-1">Sebastião Melo</h6>
+                  <span>Cozinheiro</span><br><br>
+                  <button class="btn">Orçamento</button>
+                </div>
+                <div class="col-lg-3 text-center opcoes-box eletricista">
+                  <img src="img/perfil2.png" class="img-fluid" alt="Perfil1">
+                  <h6 class="text-center pt-1">Matheus Andrade</h6>
+                  <span>Eletricista</span><br><br>
+                  <button class="btn">Orçamento</button>
+                </div>
+                <div class="col-lg-3 text-center opcoes-box costureira">
+                  <img src="img/perfil3.png" class="img-fluid" alt="Perfil1">
+                  <h6 class="text-center pt-1">Maria Pereira</h6>
+                  <span>Costureira</span><br><br>
+                  <button class="btn">Orçamento</button>
+                </div>
+                <div class="col-lg-3 text-center opcoes-box piscineiro">
+                  <img src="img/perfil4.png" class="img-fluid" alt="Perfil1">
+                  <h6 class="text-center pt-1">Vitor Gomes</h6>
+                  <span>Piscineiro</span><br><br>
+                  <button class="btn">Orçamento</button>
+                </div>
+                <div class="col-lg-3 text-center opcoes-box cozinha">
+                  <img src="img/perfil5.png" class="img-fluid" alt="Perfil1">
+                  <h6 class="text-center pt-1">Marcela Lima</h6>
+                  <span>Cozinheira</span><br><br>
+                  <button class="btn">Orçamento</button>
+                </div>
+                <div class="col-lg-3 text-center opcoes-box pintor">
+                  <img src="img/perfil1.png" class="img-fluid" alt="Perfil1">
+                  <h6 class="text-center pt-1">Antonio Santos</h6>
+                  <span>Pintor</span><br><br>
+                  <button class="btn">Orçamento</button>
+                </div>
+                <div class="col-lg-3 text-center opcoes-box pedreiro">
+                  <img src="img/perfil2.png" class="img-fluid" alt="Perfil1">
+                  <h6 class="text-center pt-1">José Carlos</h6>
+                  <span>Pedreiro</span><br><br>
+                  <button class="btn">Orçamento</button>
+                </div>
+              </div>
+             </div>
+          </div>
+        </nav>
+    </section>
+  </main>
+
+  <footer class="bg-light pt-5 pb-2 w-100">
+    <div class="footer-tamanho">
+      <div class="row">
+        <div class="col-md-3 col-12 mb-3 mb-md-0 text-center">
+          <img class="logo-footer" src="img/logo.png" >
+        </div>
+        <div class="col-md-3 col-12 mb-3 mb-md-0 text-center">
+          <h4>Empresa</h4>
+            <ul class="navbar-nav">
+              <li>
+                <a href="">Sobre</a>
+              </li>
+              <li>
+                <a href="">Serviços</a>
+              </li>
+              <li>
+                <a href="">Imprensa</a>
+              </li>
+            </ul>
+        </div>
+        <div class="col-md-3 col-12 mb-3 mb-md-0 text-center">
+            <h4>Links Úteis</h4>
+            <ul class="navbar-nav">
+              <li>
+                <a href="">Contato</a>
+              </li>
+              <li>
+                <a href="">Novidades</a>
+              </li>
+            </ul>
+        </div>        
+        <div class="col-md-3 col-12 mb-3 mb-md-0 text-center">
+          <div class="col-mid-4 ml-1 mr-2 d-inline-block">
+            <a href="">
+              <img src="img/instagram.png" width="45">
+            </a>
+          </div>
+          <div class="col-mid-4 mr-2 d-inline-block">
+            <a href="">
+              <img src="img/facebook.png" width="45">
+            </a>
+          </div>
+          <div class="col-mid-4 ml-md-1 mt-md-2 ml-lg-0 mt-lg-0 d-inline-block">
+            <a href="">
+              <img src="img/twitter.png" width="45">
+            </a>
+          </div>
+        </div>
+        <div class="col-12 text-center mt-5">
+          <span class="text-secondary">Copyright © 2020-2021 Task. Todos os direitos Reservados.</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+ 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="js/bootstrap.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,292 @@
+body{
+    width: 100%;
+    background-color: rgb(173, 202, 255);
+}
+main{
+    background-color: rgba(173, 202, 255);
+}
+
+/*COMEÇO HEADER*/
+header {
+    background-color: #30acfa;
+    width: 100%;
+}
+.navbar-topo{
+    background-color: #30acfa;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+.form-control{
+    width: 400px;
+}
+.nav-link{
+    max-width: 150px;
+    margin-right: 10px;
+}
+.nav-link:hover{
+    color: orangered;
+    border-radius: 5px;
+}
+.navbar-topo a{
+    color: white;
+}
+
+.nav-item-login{
+    max-width: 70vw;
+    background-color: white;
+    padding: 15px;
+    border-radius: 8px;
+}
+.btn-entrar{
+    color:white;
+    margin-right: 5px;
+    background-color: orangered;
+}
+.btn-entrar:hover{
+    color:orangered;
+    border:1px solid orangered;
+    margin-right: 5px;
+    background-color: white;
+}
+.btn-cadastrar{
+    color: white;
+    border: 1px solid rgb(121, 121, 121);
+    background-color: rgba(121, 121, 121, 0.597);
+}
+.btn-cadastrar:hover{
+    color: rgb(121, 121, 121);
+    border: 1px solid rgb(121, 121, 121);
+    background-color: white;
+
+}
+ul{
+    width: 100%;
+}
+/*FIM HEADER*/
+
+/*COMEÇO SLIDER*/
+.slide{
+    width: 100%;
+    background-color: orange;
+}
+
+.carousel-img {
+    width: 100%;
+    max-height: 600px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.carousel-control-prev{
+    width: 10%;
+}
+
+.carousel-control-next{
+    width: 10%;
+}
+
+.carousel-control-prev:hover{
+    background-color: rgba(100, 149, 237,0.1);
+}
+
+.carousel-control-next:hover{
+    background-color: rgba(100, 149, 237,0.1);
+}
+
+/*FIM SLIDER*/
+
+/*COMEÇO INDEX CATEGORIAS*/
+section.categorias{
+    background-color: #007bff85;
+    border-radius: 10px;
+    width: 80%;
+}
+
+.container-categorias{
+    background-color: white;
+    padding: 15px;
+    margin-top: 50px;
+    border-radius: 10px;
+    margin-bottom: 18px;
+}
+
+.categorias-item{
+    min-width:150px;
+    padding: 2px;
+    padding-top: 25px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    height: auto;
+}
+
+.categorias-item:hover{
+    border: 1px solid orangered;
+    box-shadow: 5px 5px 5px rgb(121, 121, 121);
+}
+
+.categorias-item  a{
+    color: black;
+}
+
+.categorias-item a:hover{
+    color: orangered;
+    text-decoration: none;
+}
+
+/*FIM INDEX CATEGORIAS*/
+
+/*COMEÇO LOGIN */
+.container-login{
+    padding: 20px;
+}
+.form-login > div{
+    padding-top: 25px;
+    padding-bottom: 35px;
+}
+/*FIM LOGIN*/
+
+/*COMEÇO CADASTRO*/
+.cadastro-form{
+    padding-top: 20px;
+    padding-bottom: 35px;
+    border-radius: 8px;
+}
+/*FIM CADASTRO*/
+
+/*COMEÇO CATEGORIAS*/
+.busca-categorias{
+    border-radius: 8px;
+}
+.categorias-opcao{
+    font-size: 18px;
+    margin-bottom: -10px;
+    color: black;
+    text-decoration: none;
+}
+.categorias-opcao:hover{
+    color: orangered;
+    text-decoration: none;
+    text-shadow: 2px 2px 2px white;
+}
+.active{
+    color: orangered;
+}
+main li{
+    list-style: none;
+    display: block;
+    width: 100%;
+}
+
+.h4-color{
+    color: orangered;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.26);
+}
+.span-color{
+    font-size: 25px;
+    color: orangered;
+}
+.opcoes-box{
+    background-color: #30acfa44;
+    border-radius: 8px;
+    margin: 10px;
+    padding: 15px 15px;
+
+}
+
+.opcoes-box button{
+    color: white;
+    background-color: #30acfa;
+}
+.opcoes-box button:hover{
+    color: #30acfa;
+    background-color: white;
+    border: 1px solid #30acfa;
+}
+
+
+/*FIM CATEGORIAS*/
+
+
+
+/*COMEÇO FOOTER*/
+footer {
+    width: 125%;
+}
+
+.container{
+    width: 90%;
+}
+.footer-tamanho{
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+
+footer a{
+    color: #2282bd;
+}
+
+footer a:hover{
+    color: orangered;
+    text-decoration: none;
+}
+/*FINAL FOOTER*/
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .logo-footer{
+        width: 160px;
+   }
+    .login-form{
+        border-radius: 8px;
+    }¨
+    .navbar-topo{
+        width: 80%;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .logo-footer{
+        width: 160px;
+    }
+    .login-form{
+        border-radius: 8px;
+    }
+    .navbar-topo{
+        width: 80%;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .login-form{
+        border-top-right-radius: 8px;
+        border-bottom-right-radius: 8px;
+        border-top-left-radius: 0px;
+        border-bottom-left-radius: 0px;
+    }
+    .login-img{
+        border-top-left-radius: 8px;
+        border-bottom-left-radius: 8px;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+}
+
+@media only screen and (min-width: 1368px) {
+    .navbar-topo{
+        width: 70%;
+    }
+}
